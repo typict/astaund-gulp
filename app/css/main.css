@@ -1179,7 +1179,8 @@ nav ul li {
       float: left;
       margin-right: 16px;
       margin-top: 11px;
-      letter-spacing: 1.4px; }
+      letter-spacing: 1.4px;
+      cursor: pointer; }
     .top .rightside .size .items span {
       width: 38px;
       height: 38px;
