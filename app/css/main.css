@@ -940,152 +940,11 @@ abbr[title] {
 .wp-caption {
   max-width: 100%; }
 
-.button {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  -o-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #2c303d;
-  border: none;
-  -webkit-border-radius: 22px;
-          border-radius: 22px;
-  behavior: url(css/PIE.htc);
-  background-color: #8ae6cf;
-  -webkit-font-smoothing: antialiased; }
-  .button:hover {
-    opacity: 0.8; }
-  .button:focus {
-    opacity: 0.8; }
-  .button:active {
-    opacity: 0.8; }
-  .button:disabled {
-    cursor: not-allowed;
-    opacity: .5; }
-
-.btn {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  -o-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #2c303d;
-  border: none;
-  -webkit-border-radius: 22px;
-          border-radius: 22px;
-  behavior: url(css/PIE.htc);
-  background-color: #8ae6cf;
-  -webkit-font-smoothing: antialiased; }
-  .btn:hover {
-    opacity: 0.8; }
-  .btn:focus {
-    opacity: 0.8; }
-  .btn:active {
-    opacity: 0.8; }
-  .btn:disabled {
-    cursor: not-allowed;
-    opacity: .5; }
-
-input[type='button'] {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  -o-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #2c303d;
-  border: none;
-  -webkit-border-radius: 22px;
-          border-radius: 22px;
-  background-color: #8ae6cf;
-  -webkit-font-smoothing: antialiased; }
-  input[type='button']:hover {
-    opacity: 0.8; }
-  input[type='button']:focus {
-    opacity: 0.8; }
-  input[type='button']:active {
-    opacity: 0.8; }
-  input[type='button']:disabled {
-    cursor: not-allowed;
-    opacity: .5; }
-
-input[type='reset'] {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  -o-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #2c303d;
-  border: none;
-  -webkit-border-radius: 22px;
-          border-radius: 22px;
-  background-color: #8ae6cf;
-  -webkit-font-smoothing: antialiased; }
-  input[type='reset']:hover {
-    opacity: 0.8; }
-  input[type='reset']:focus {
-    opacity: 0.8; }
-  input[type='reset']:active {
-    opacity: 0.8; }
-  input[type='reset']:disabled {
-    cursor: not-allowed;
-    opacity: .5; }
-
+.button,
+button,
+.btn,
+input[type='button'],
+input[type='reset'],
 input[type='submit'] {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -1110,52 +969,32 @@ input[type='submit'] {
   border: none;
   -webkit-border-radius: 22px;
           border-radius: 22px;
+  behavior: url(css/PIE.htc);
   background-color: #8ae6cf;
   -webkit-font-smoothing: antialiased; }
-  input[type='submit']:hover {
-    opacity: 0.8; }
-  input[type='submit']:focus {
-    opacity: 0.8; }
+  .button:hover, .button:focus, .button:active,
+  button:hover,
+  button:focus,
+  button:active,
+  .btn:hover,
+  .btn:focus,
+  .btn:active,
+  input[type='button']:hover,
+  input[type='button']:focus,
+  input[type='button']:active,
+  input[type='reset']:hover,
+  input[type='reset']:focus,
+  input[type='reset']:active,
+  input[type='submit']:hover,
+  input[type='submit']:focus,
   input[type='submit']:active {
     opacity: 0.8; }
+  .button:disabled,
+  button:disabled,
+  .btn:disabled,
+  input[type='button']:disabled,
+  input[type='reset']:disabled,
   input[type='submit']:disabled {
-    cursor: not-allowed;
-    opacity: .5; }
-
-button {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  -webkit-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  -o-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #2c303d;
-  border: none;
-  -webkit-border-radius: 22px;
-          border-radius: 22px;
-  background-color: #8ae6cf;
-  -webkit-font-smoothing: antialiased;
-  behavior: url(css/PIE.htc); }
-  button:hover {
-    opacity: 0.8; }
-  button:focus {
-    opacity: 0.8; }
-  button:active {
-    opacity: 0.8; }
-  button:disabled {
     cursor: not-allowed;
     opacity: .5; }
 
@@ -1172,11 +1011,11 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased; }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 1.2;
-  margin: 0 0 .65em;
+  margin: 0 0 16px;
   text-transform: uppercase;
   font-weight: bold;
   color: #2c303d;
@@ -1184,80 +1023,14 @@ h1 {
   letter-spacing: 1.8px; }
 
 h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #2c303d;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
   font-family: "Open Sans", sans-serif;
-  font-size: 22px;
-  letter-spacing: 2.5px; }
-
-h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #2c303d;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 22px;
-  letter-spacing: 2.5px; }
-
-h4 {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #2c303d;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 22px;
-  letter-spacing: 2.5px; }
-
-h5 {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #2c303d;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 22px;
-  letter-spacing: 2.5px; }
-
-h6 {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #2c303d;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 22px;
-  letter-spacing: 2.5px; }
+  font-size: 23px; }
 
 p {
-  margin: 0 0 0.55em; }
+  margin: 0 0 9px; }
 
 pre {
-  margin: 0 0 0.55em; }
+  margin: 0 0 9px; }
 
 a {
   -webkit-transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
@@ -1267,11 +1040,7 @@ a {
   color: #2c87ce;
   font-size: 18px;
   font-weight: bold; }
-  a:active {
-    color: #1f5e8f;
-    color: #68abdf;
-    outline: none; }
-  a:focus {
+  a:active, a:focus {
     color: #1f5e8f;
     color: #68abdf;
     outline: none; }
@@ -1305,12 +1074,12 @@ picture {
 nav ul li {
   display: inline-block; }
 
-article .clearfix {
+.article .clearfix {
   *zoom: 1; }
-  article .clearfix:before {
+  .article .clearfix:before {
     display: table;
     content: ''; }
-  article .clearfix:after {
+  .article .clearfix:after {
     display: table;
     clear: both;
     content: ''; }
@@ -1411,7 +1180,7 @@ article .clearfix {
       margin-right: 16px;
       margin-top: 11px;
       letter-spacing: 1.4px; }
-    .top .rightside .size a {
+    .top .rightside .size .items span {
       width: 38px;
       height: 38px;
       -webkit-border-radius: 50%;
@@ -1426,8 +1195,9 @@ article .clearfix {
       display: block;
       float: left;
       margin-right: 13px;
-      line-height: 37px; }
-      .top .rightside .size a:hover {
+      line-height: 37px;
+      margin-top: 0; }
+      .top .rightside .size .items span:hover {
         color: #fff;
         background: #2c303d; }
     .top .rightside .size a.active {
@@ -1622,8 +1392,9 @@ article .clearfix {
         margin-top: 27px; }
         .top .rightside .size span {
           display: none; }
-        .top .rightside .size a {
-          margin-right: 23px; }
+        .top .rightside .size .items span {
+          margin-right: 23px;
+          display: block; }
       .top .rightside .prices {
         margin-top: 10px; }
         .top .rightside .prices .old {
@@ -1773,7 +1544,7 @@ article .clearfix {
         .top .rightside .size .items {
           max-width: 276px;
           margin: auto; }
-          .top .rightside .size .items a {
+          .top .rightside .size .items span {
             margin: 14px;
             margin-top: 3px; }
       .top .rightside button {

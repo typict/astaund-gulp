@@ -13,7 +13,13 @@ $font_family_4: Open Sans Bold,sans-serif;
 $background_color_1: #8ae6cf;
 $background_color_2: #fff;
 
-.button {
+.button,
+button,
+.btn,
+input[type='button'],
+input[type='reset'],
+input[type='submit']
+ {
   font-family: $font_family_1;
   font-size: 14px;
   font-weight: bold;
@@ -34,13 +40,7 @@ $background_color_2: #fff;
   behavior: url(css/PIE.htc);
   background-color: $background_color_1;
   -webkit-font-smoothing: antialiased;
-  &:hover {
-    opacity: 0.8;
-  }
-  &:focus {
-    opacity: 0.8;
-  }
-  &:active {
+  &:hover,&:focus,&:active {
     opacity: 0.8;
   }
   &:disabled {
@@ -48,178 +48,7 @@ $background_color_2: #fff;
     opacity: .5;
   }
 }
-.btn {
-  font-family: $font_family_1;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color_1;
-  border: none;
-  border-radius: 22px;
-  behavior: url(css/PIE.htc);
-  background-color: $background_color_1;
-  -webkit-font-smoothing: antialiased;
-  &:hover {
-    opacity: 0.8;
-  }
-  &:focus {
-    opacity: 0.8;
-  }
-  &:active {
-    opacity: 0.8;
-  }
-  &:disabled {
-    cursor: not-allowed;
-    opacity: .5;
-  }
-}
-input[type='button'] {
-  font-family: $font_family_1;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color_1;
-  border: none;
-  border-radius: 22px;
-  background-color: $background_color_1;
-  -webkit-font-smoothing: antialiased;
-  &:hover {
-    opacity: 0.8;
-  }
-  &:focus {
-    opacity: 0.8;
-  }
-  &:active {
-    opacity: 0.8;
-  }
-  &:disabled {
-    cursor: not-allowed;
-    opacity: .5;
-  }
-}
-input[type='reset'] {
-  font-family: $font_family_1;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color_1;
-  border: none;
-  border-radius: 22px;
-  background-color: $background_color_1;
-  -webkit-font-smoothing: antialiased;
-  &:hover {
-    opacity: 0.8;
-  }
-  &:focus {
-    opacity: 0.8;
-  }
-  &:active {
-    opacity: 0.8;
-  }
-  &:disabled {
-    cursor: not-allowed;
-    opacity: .5;
-  }
-}
-input[type='submit'] {
-  font-family: $font_family_1;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color_1;
-  border: none;
-  border-radius: 22px;
-  background-color: $background_color_1;
-  -webkit-font-smoothing: antialiased;
-  &:hover {
-    opacity: 0.8;
-  }
-  &:focus {
-    opacity: 0.8;
-  }
-  &:active {
-    opacity: 0.8;
-  }
-  &:disabled {
-    cursor: not-allowed;
-    opacity: .5;
-  }
-}
-button {
-  font-family: $font_family_1;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  display: inline-block;
-  padding: 15px;
-  width: 214px;
-  cursor: pointer;
-  user-select: none;
-  transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color_1;
-  border: none;
-  border-radius: 22px;
-  background-color: $background_color_1;
-  -webkit-font-smoothing: antialiased;
-  behavior: url(css/PIE.htc);
-  &:hover {
-    opacity: 0.8;
-  }
-  &:focus {
-    opacity: 0.8;
-  }
-  &:active {
-    opacity: 0.8;
-  }
-  &:disabled {
-    cursor: not-allowed;
-    opacity: .5;
-  }
-}
+
 body {
   font-family: $font_family_1;
   font-size: 12px;
@@ -231,92 +60,26 @@ body {
   background-color: $background_color_2;
   -webkit-font-smoothing: antialiased;
 }
-h1 {
+h1,h2,h3,h4,h5,h6 {
   font-family: $font_family_2;
   font-size: 24px;
   line-height: 1.2;
-  margin: 0 0 .65em;
+  margin: 0 0 16px;
   text-transform: uppercase;
   font-weight: bold;
   color: $color_1;
   letter-spacing: 2px;
   letter-spacing: 1.8px;
 }
-h2 {
-  font-family: $font_family_2;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: $color_1;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
+h2{
   font-family: $font_family_1;
-  font-size: 22px;
-  letter-spacing: 2.5px;
-}
-h3 {
-  font-family: $font_family_2;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: $color_1;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
-  font-family: $font_family_1;
-  font-size: 22px;
-  letter-spacing: 2.5px;
-}
-h4 {
-  font-family: $font_family_2;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: $color_1;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
-  font-family: $font_family_1;
-  font-size: 22px;
-  letter-spacing: 2.5px;
-}
-h5 {
-  font-family: $font_family_2;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: $color_1;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
-  font-family: $font_family_1;
-  font-size: 22px;
-  letter-spacing: 2.5px;
-}
-h6 {
-  font-family: $font_family_2;
-  font-size: 24px;
-  line-height: 1.2;
-  margin: 0 0 .65em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: $color_1;
-  letter-spacing: 2px;
-  letter-spacing: 1.8px;
-  font-family: $font_family_1;
-  font-size: 22px;
-  letter-spacing: 2.5px;
+  font-size: 23px;
 }
 p {
-  margin: 0 0 0.55em;
+  margin: 0 0 9px;
 }
 pre {
-  margin: 0 0 0.55em;
+  margin: 0 0 9px;
 }
 a {
   transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
@@ -324,12 +87,7 @@ a {
   color: $color_3;
   font-size: 18px;
   font-weight: bold;
-  &:active {
-    color: $color_4;
-    color: $color_5;
-    outline: none;
-  }
-  &:focus {
+  &:active,&:focus {
     color: $color_4;
     color: $color_5;
     outline: none;
@@ -371,7 +129,7 @@ nav {
     }
   }
 }
-article {
+.article {
   .clearfix {
     *zoom: 1;
     &:before {
@@ -499,7 +257,7 @@ article {
         margin-top: 11px;
         letter-spacing: 1.4px;
       }
-      a {
+      .items span {
         width: 38px;
         height: 38px;
         border-radius: 50%;
@@ -514,6 +272,7 @@ article {
         float: left;
         margin-right: 13px;
         line-height: 37px;
+            margin-top: 0;
         &:hover {
           color: $color_7;
           background: #2c303d;
@@ -745,8 +504,9 @@ article {
           display: none;
         }
         margin-top: 27px;
-        a {
+        .items span {
           margin-right: 23px;
+          display: block;
         }
       }
       .prices {
@@ -945,7 +705,7 @@ article {
         .items {
           max-width: 276px;
           margin: auto;
-          a {
+          span {
             margin: 14px;
             margin-top: 3px;
           }
