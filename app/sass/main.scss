@@ -143,7 +143,7 @@ nav {
     }
   }
 }
-.row {
+.container {
   max-width: 934px;
   margin: auto;
   padding-left: 50px;
@@ -187,7 +187,7 @@ nav {
     width: 50%;
     padding-top: 6px;
     float: left;
-    .img_w {
+    .img_wrap {
       width: 100%;
       max-width: 400px;
       background: #eaf2f4;
@@ -222,13 +222,18 @@ nav {
       width: 100%;
       margin-top: 18px;
       .old {
+        margin: 0;
+        padding: 0;
         font-size: 24px;
         font-weight: bold;
         color: $color_1;
         text-decoration: line-through;
         float: left;
+
       }
       .new {
+        margin: 0;
+        padding: 0;
         font-size: 24px;
         font-weight: bold;
         color: $color_1;
@@ -312,7 +317,7 @@ nav {
     &:nth-child(3n) {
       margin-right: 0;
     }
-    .img_w {
+    .img_wrap {
       width: 100%;
       max-width: 400px;
       background: #eaf2f4;
@@ -339,18 +344,24 @@ nav {
       padding: 3px;
       padding-left: 4px;
       padding-right: 0;
-      div {
+      p {
+        margin: 0;
+        padding: 0;
         color: $color_1;
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 1.3px;
       }
       .old {
+        margin: 0;
+        padding: 0;
         text-decoration: line-through;
         float: left;
         margin-left: 7px;
       }
       .new {
+        margin: 0;
+        padding: 0;
         color: $color_6;
         margin-left: 13px;
         float: left;
@@ -451,11 +462,11 @@ nav {
 .buttons {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1024px)  {
   .respons_tablet {
     display: block;
   }
-  .row {
+  .container {
     padding-left: 35px;
     padding-right: 35px;
     max-width: 716px;
@@ -533,7 +544,7 @@ nav {
     .leftside {
       padding-top: 0;
       width: 52%;
-      .img_w {
+      .img_wrap {
         height: 354px;
         img {
           max-height: 94%;
@@ -565,7 +576,7 @@ nav {
         &:nth-child(2n) {
           margin-right: 0;
         }
-        .img_w {
+        .img_wrap {
           height: 284px;
           background: none;
           img {
@@ -596,7 +607,7 @@ nav {
       &:nth-child(2n) {
         margin-right: 0;
       }
-      .img_w {
+      .img_wrap {
         height: 284px;
         background: none;
         img {
@@ -627,7 +638,7 @@ nav {
   }
 }
 @media (max-width: 700px) {
-  .row {
+  .container {
     padding-left: 0;
     padding-right: 0;
   }
@@ -640,7 +651,7 @@ nav {
   }
 }
 @media (max-width: 600px) {
-  .row {
+  .container {
     max-width: 400px;
     padding-top: 36px;
   }
@@ -648,7 +659,7 @@ nav {
     padding-top: 96px;
     .leftside {
       width: 100%;
-      .img_w {
+      .img_wrap {
         height: 420px;
         width: 100%;
         min-width: 100%;
@@ -751,8 +762,10 @@ nav {
       .prices {
         background: rgba(138, 230, 207, 0.84);
         padding: 6px;
-        div {
+        p {
           font-size: 18px;
+          margin: 0;
+          padding: 0;
         }
       }
       &:nth-child(2n) {
@@ -768,6 +781,8 @@ nav {
           padding: 6px;
           div {
             font-size: 18px;
+            margin: 0;
+            padding: 0;
           }
         }
       }
@@ -784,6 +799,8 @@ nav {
           padding: 6px;
           div {
             font-size: 18px;
+            margin: 0;
+            padding: 0;
           }
         }
       }

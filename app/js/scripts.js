@@ -42,10 +42,10 @@ $(function() {
 
 jQuery(function($) {
     $(document).mouseup(function(e) {
-        var div = $(".share_with");
-        if (!div.is(e.target)
+        var share_with = $(".share_with");
+        if (!share_with.is(e.target)
             &&
-            div.has(e.target).length === 0) {
+            share_with.has(e.target).length === 0) {
             $('.share_with').removeClass('open')
         }
     });
